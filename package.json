@@ -1,6 +1,6 @@
 {
   "name": "@future-demand/react-graph-vis",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A react component to render nice graphs using vis.js",
   "main": "lib/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "vis-data": "^7.0.0",
     "vis-util": "^3.0.0 || ^4.0.0",
-    "@future-demand/vis-network": "0.0.4",
+    "vis-network": "^5.1.1",
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "uuid": "^2.0.1"
