@@ -1,4 +1,4 @@
-import Graph from "react-graph-vis";
+import Graph from "@future-demand/react-graph-vis";
 // import Graph from "../../lib";
 
 // import Graph from 'react-graph-vis'
@@ -13,17 +13,65 @@ const graph = {
     { id: 3, label: "Node 3", color: "#e0df41" },
     { id: 4, label: "Node 4", color: "#7be041" },
     { id: 5, label: "Node 5", color: "#41e0c9" }
-  ],
-  edges: [{ from: 1, to: 2 }, { from: 1, to: 3 }, { from: 2, to: 4 }, { from: 2, to: 5 }]
+  ]
 };
 
 const options = {
-  layout: {
-    hierarchical: false
-  },
-  edges: {
-    color: "#000000"
-  }
+  autoResize: true,
+      height: '100%',
+      width: '100%',
+      nodes: {
+        label: '<b>3306</b>\n3307\n3308',
+        margin: 10,
+        fixed: false,
+        // size: 100,
+        // selectedWidth: 82,
+        widthConstraint: {
+          minimum: 72,
+          maximum: 72
+        },
+        borderWidth: 1,
+        shape: 'circle',
+        size: 45,
+        color: {
+          background: '#FFF',
+          border: '#FF7474',
+          highlight: {
+            background: '#FF7474',
+            border: '#FF7474'
+          }
+        },
+        font: {
+          color: '#222',
+          // size: 18,
+          // face: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
+          // background: 'red',
+          // strokeWidth: 1,
+          // strokeColor: 'blue',
+          multi: true
+        }
+      },
+      physics: {
+        stabilization: {
+          enabled: false
+        },
+        maxVelocity: 10,
+        minVelocity: 0,
+        solver: 'repulsion',
+        repulsion: {
+          nodeDistance: 52,
+          centralGravity: 0.065,
+          springLength: 100,
+          springConstant: 0.08,
+          damping: 0.05
+        }
+      },
+      interaction: {
+        multiselect: false,
+        zoomView: false,
+        dragNodes: false,
+        dragView: false
+      }
 };
 
 const events = {

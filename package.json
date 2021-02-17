@@ -1,6 +1,6 @@
 {
   "name": "@future-demand/react-graph-vis",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "A react component to render nice graphs using vis.js",
   "main": "lib/index.js",
   "scripts": {
@@ -22,13 +22,10 @@
   ],
   "author": "Vincent Lecrubier <vincent.lecrubier@gmail.com> (http://www.vincentlecrubier.fr/)",
   "license": "MIT",
-  "peerDependencies": {
-    "react": "*"
-  },
   "dependencies": {
     "vis-data": "^7.0.0",
     "vis-util": "^3.0.0 || ^4.0.0",
-    "vis-network": "^5.1.1",
+    "@future-demand/vis-network": "0.0.5",
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "uuid": "^2.0.1"

@@ -11,7 +11,13 @@
     "type": "git",
     "url": "https://github.com/crubier/react-graph-vis.git"
   },
-  "keywords": ["react-component", "react", "graph", "network", "jsx"],
+  "keywords": [
+    "react-component",
+    "react",
+    "graph",
+    "network",
+    "jsx"
+  ],
   "author": "Vincent Lecrubier <vincent.lecrubier@gmail.com> (http://www.vincentlecrubier.fr/)",
   "license": "MIT",
   "dependencies": {
@@ -21,9 +27,9 @@
     "babel-preset-env": "^1.1.8",
     "babel-preset-stage-3": "^6.22.0",
     "html-webpack-plugin": "^2.28.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-graph-vis": "^1.0.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "@future-demand/react-graph-vis": "file:../",
     "webpack": "^2.2.1",
     "babel-preset-react": "^6.22.0"
   }

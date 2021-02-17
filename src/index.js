@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import defaultsDeep from "lodash/fp/defaultsDeep";
 import isEqual from "lodash/isEqual";
 import differenceWith from "lodash/differenceWith";
-import vis from "@future-demand/vis-network";
+// import vis from "@future-demand/vis-network";
+import * as vis from '@future-demand/vis-network'
+import { DataSet } from 'vis-data'
 import uuid from "uuid";
 import PropTypes from "prop-types";
+
+const x = require("@future-demand/vis-network")
 
 class Graph extends Component {
   constructor(props) {
@@ -18,9 +22,9 @@ class Graph extends Component {
   }
 
   componentDidMount() {
-    this.edges = new vis.DataSet();
+    this.edges = new DataSet();
     this.edges.add(this.props.graph.edges);
-    this.nodes = new vis.DataSet();
+    this.nodes = new DataSet();
     this.nodes.add(this.props.graph.nodes);
     this.updateGraph();
   }
